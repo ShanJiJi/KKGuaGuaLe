@@ -1,25 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DvI-qt-T9c">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="eXb-Jt-QSQ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="DvI-qt-T9c" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="GQJ-K2-evo"/>
+                        <viewControllerLayoutGuide type="bottom" id="ySY-Be-vyd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="MZj-SY-vuZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scratch_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="msk-Q9-uyf">
+                                <rect key="frame" x="180" y="336" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MB9-uC-zTm"/>
+                                    <constraint firstAttribute="width" constant="240" id="bYM-dv-zDa"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tv-F6-61b" customClass="MaskView">
+                                <rect key="frame" x="180" y="336" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fasdfasdfasfadsf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpZ-S5-4cY">
+                                        <rect key="frame" x="56" y="50" width="128" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rpZ-S5-4cY" secondAttribute="bottom" constant="38" id="2d7-ab-srB"/>
+                                    <constraint firstItem="rpZ-S5-4cY" firstAttribute="top" secondItem="6tv-F6-61b" secondAttribute="top" constant="50" id="Dhy-PD-Y54"/>
+                                    <constraint firstAttribute="trailing" secondItem="rpZ-S5-4cY" secondAttribute="trailing" constant="56" id="MPH-D6-p4y"/>
+                                    <constraint firstAttribute="width" constant="240" id="P4J-59-Acd"/>
+                                    <constraint firstAttribute="height" constant="128" id="Wde-1Z-MtJ"/>
+                                    <constraint firstItem="rpZ-S5-4cY" firstAttribute="leading" secondItem="6tv-F6-61b" secondAttribute="leading" constant="56" id="ZvH-0w-ZqH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是一个滑滑板" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ln6-uO-3aF">
+                                <rect key="frame" x="173" y="516" width="253" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="JQj-jO-VNc"/>
+                                    <constraint firstAttribute="width" constant="253" id="T9z-4Z-QTk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scratch_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="QJv-qh-diU">
+                                <rect key="frame" x="173" y="516" width="253" height="74"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8y-cN-M3r" customClass="DrawView">
+                                <rect key="frame" x="160" y="10" width="280" height="280"/>
+                                <color key="backgroundColor" red="1" green="0.42078618280000002" blue="0.44561960940000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="cw0-dO-y8f"/>
+                                    <constraint firstAttribute="height" constant="280" id="kny-dL-fKx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="msk-Q9-uyf" firstAttribute="centerX" secondItem="MZj-SY-vuZ" secondAttribute="centerX" id="0Sj-1u-N8K"/>
+                            <constraint firstItem="QJv-qh-diU" firstAttribute="height" secondItem="ln6-uO-3aF" secondAttribute="height" id="6Ne-DI-f59"/>
+                            <constraint firstItem="6tv-F6-61b" firstAttribute="centerX" secondItem="MZj-SY-vuZ" secondAttribute="centerX" id="7IK-KJ-G7W"/>
+                            <constraint firstItem="QJv-qh-diU" firstAttribute="top" secondItem="ln6-uO-3aF" secondAttribute="top" id="BwE-8D-jPI"/>
+                            <constraint firstItem="QJv-qh-diU" firstAttribute="leading" secondItem="ln6-uO-3aF" secondAttribute="leading" id="EhG-b3-wcK"/>
+                            <constraint firstItem="QJv-qh-diU" firstAttribute="width" secondItem="ln6-uO-3aF" secondAttribute="width" id="HMm-na-0m6"/>
+                            <constraint firstItem="A8y-cN-M3r" firstAttribute="top" secondItem="MZj-SY-vuZ" secondAttribute="top" constant="10" id="VEv-ig-2Pi"/>
+                            <constraint firstItem="QJv-qh-diU" firstAttribute="trailing" secondItem="ln6-uO-3aF" secondAttribute="trailing" id="ezt-Vz-F1s"/>
+                            <constraint firstItem="A8y-cN-M3r" firstAttribute="centerX" secondItem="MZj-SY-vuZ" secondAttribute="centerX" id="f1R-A9-pZ1"/>
+                            <constraint firstItem="msk-Q9-uyf" firstAttribute="centerY" secondItem="MZj-SY-vuZ" secondAttribute="centerY" constant="100" id="jZ6-V2-tQz"/>
+                            <constraint firstItem="QJv-qh-diU" firstAttribute="centerX" secondItem="ln6-uO-3aF" secondAttribute="centerX" id="lWb-no-nkX"/>
+                            <constraint firstItem="6tv-F6-61b" firstAttribute="centerY" secondItem="MZj-SY-vuZ" secondAttribute="centerY" constant="100" id="m1V-Oi-hvb"/>
+                            <constraint firstItem="6tv-F6-61b" firstAttribute="centerY" secondItem="MZj-SY-vuZ" secondAttribute="centerY" id="x2R-d8-GE9"/>
+                            <constraint firstItem="ySY-Be-vyd" firstAttribute="top" secondItem="ln6-uO-3aF" secondAttribute="bottom" constant="10" id="xer-Gb-PW0"/>
+                            <constraint firstItem="ln6-uO-3aF" firstAttribute="centerX" secondItem="MZj-SY-vuZ" secondAttribute="centerX" id="yVC-5y-qwj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="x2R-d8-GE9"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="QJv-qh-diU" id="gzi-CH-5Zt"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9I-t9-mXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="418" y="1018"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="scratch_bg.png" width="320" height="180"/>
+    </resources>
 </document>

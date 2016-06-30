@@ -15,6 +15,9 @@
 		047EF2ED1D23A35A00ED1C5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047EF2EB1D23A35A00ED1C5E /* LaunchScreen.storyboard */; };
 		047EF2F81D23A35A00ED1C5E /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047EF2F71D23A35A00ED1C5E /* __Tests.m */; };
 		047EF3031D23A35A00ED1C5E /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047EF3021D23A35A00ED1C5E /* __UITests.m */; };
+		047EF3121D23A37E00ED1C5E /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047EF3111D23A37E00ED1C5E /* MaskView.m */; };
+		047EF3141D23A49400ED1C5E /* scratch_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047EF3131D23A49400ED1C5E /* scratch_bg@3x.png */; };
+		047EF31A1D23C3AA00ED1C5E /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047EF3191D23C3AA00ED1C5E /* DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		047EF2FE1D23A35A00ED1C5E /* 测试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "测试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		047EF3021D23A35A00ED1C5E /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		047EF3041D23A35A00ED1C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047EF3101D23A37E00ED1C5E /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
+		047EF3111D23A37E00ED1C5E /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
+		047EF3131D23A49400ED1C5E /* scratch_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scratch_bg@3x.png"; sourceTree = "<group>"; };
+		047EF3181D23C3AA00ED1C5E /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		047EF3191D23C3AA00ED1C5E /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +111,18 @@
 			children = (
 				047EF2E01D23A35A00ED1C5E /* AppDelegate.h */,
 				047EF2E11D23A35A00ED1C5E /* AppDelegate.m */,
+				047EF3131D23A49400ED1C5E /* scratch_bg@3x.png */,
 				047EF2E31D23A35A00ED1C5E /* ViewController.h */,
 				047EF2E41D23A35A00ED1C5E /* ViewController.m */,
 				047EF2E61D23A35A00ED1C5E /* Main.storyboard */,
 				047EF2E91D23A35A00ED1C5E /* Assets.xcassets */,
 				047EF2EB1D23A35A00ED1C5E /* LaunchScreen.storyboard */,
+				047EF3101D23A37E00ED1C5E /* MaskView.h */,
+				047EF3111D23A37E00ED1C5E /* MaskView.m */,
 				047EF2EE1D23A35A00ED1C5E /* Info.plist */,
 				047EF2DD1D23A35A00ED1C5E /* Supporting Files */,
+				047EF3181D23C3AA00ED1C5E /* DrawView.h */,
+				047EF3191D23C3AA00ED1C5E /* DrawView.m */,
 			);
 			path = "测试";
 			sourceTree = "<group>";
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					047EF2D91D23A35A00ED1C5E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = US3V2JJL69;
 					};
 					047EF2F21D23A35A00ED1C5E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -246,6 +260,7 @@
 				047EF2ED1D23A35A00ED1C5E /* LaunchScreen.storyboard in Resources */,
 				047EF2EA1D23A35A00ED1C5E /* Assets.xcassets in Resources */,
 				047EF2E81D23A35A00ED1C5E /* Main.storyboard in Resources */,
+				047EF3141D23A49400ED1C5E /* scratch_bg@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047EF3121D23A37E00ED1C5E /* MaskView.m in Sources */,
 				047EF2E51D23A35A00ED1C5E /* ViewController.m in Sources */,
 				047EF2E21D23A35A00ED1C5E /* AppDelegate.m in Sources */,
 				047EF2DF1D23A35A00ED1C5E /* main.m in Sources */,
+				047EF31A1D23C3AA00ED1C5E /* DrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +432,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zhenwei.123.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +445,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zhenwei.123.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +519,7 @@
 				047EF3091D23A35A00ED1C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		047EF30A1D23A35A00ED1C5E /* Build configuration list for PBXNativeTarget "测试Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +528,7 @@
 				047EF30C1D23A35A00ED1C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		047EF30D1D23A35A00ED1C5E /* Build configuration list for PBXNativeTarget "测试UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +537,7 @@
 				047EF30F1D23A35A00ED1C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
